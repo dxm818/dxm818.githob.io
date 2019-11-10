@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.co{
+				background: #f4f4f4;
+				color: #FFFFFF;
+			}
+		[v-cloak]{
+			display: none;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="box" v-cloak>
+			<div style="height: 60px;">
+				<div v-for="(i,$index) in arr" style="float: left;padding: 0 10px;line-height: 60px;" @click="index=$index" :class="$index==index?'co':''"> 
+					{{i.title}}
+				</div>
+			</div>
+			<div v-for="(i,$index) in arr" v-show="index == $index">
+				{{i.content}}
+			</div>
+		</div>
+	</body>
+	<script src="vue.js"></script>
+	<script>
+		new Vue({
+			el:"#box",
+			data:{
+				index:0,
+				arr:[
+				{title:'标题一',content:'内容一'},
+				{title:'标题二',content:'内容二'},
+				{title:'标题三',content:'内容三'}
+				]
+			}
+		})
+	</script>
+</html>
