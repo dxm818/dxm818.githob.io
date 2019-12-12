@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin:0;padding:0;}
+			[v-cloack]{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+	    <div id="box" v-cloak="">
+	    	<a-lee>
+	    		<h3 slot="titles">产品介绍</h3>
+	    		<span slot="iocs">国标</span>
+	    		<div slot="text">
+	    			<p>亲，本版本是最简单的单页式模板，不需要创建内页</p>
+	    			<p>一般来说，只要半天就可以完成对这个模板的设定哦</p>
+	    			<p>如果您在使用中有什么问题，可以在教程中找到对应的帮助信息哦</p>
+	    		</div>
+	    		<div slot="content" style="text-align: center;padding:20px 0;">
+	    			<img src="https://ccdn.goodq.top/caches/4a7b7daf436f3e5cb2e29433375ccd5d/aHR0cHM6Ly81NTlhNDQ3YzczMmVlLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTQvMDYvYjU5YzY3YmYxOTZhNDc1ODE5MWU0MmY3NjY3MGNlYmEuanBn.jpg">
+	    		</div>
+	    	</a-lee>
+	    	<a-lee>
+	    		<h3 slot="titles">产品介绍</h3>
+	    		<span slot="iocs">国标</span>
+	    		<div slot="text">
+	    			<p>亲，本版本是最简单的单页式模板，不需要创建内页</p>
+	    			<p>一般来说，只要半天就可以完成对这个模板的设定哦</p>
+	    			<p>如果您在使用中有什么问题，可以在教程中找到对应的帮助信息哦</p>
+	    		</div>
+	    		<div slot="content">
+	    			<no1></no1>
+	    		</div>
+	    	</a-lee>
+	    	<div style="overflow: hidden;">
+	    		<a-lee style="float: left;width: 50%;">
+	    			<h3 slot="titles">产品介绍</h3>
+	    		<span slot="iocs">国标</span>
+	    		</a-lee>
+	    		<a-lee style="float: left;width: 50%;">
+	    			<h3 slot="titles">产品介绍</h3>
+	    		<span slot="iocs">国标</span>
+	    		<div slot="text">
+	    			<p>亲，本版本是最简单的单页式模板，不需要创建内页</p>
+	    			<p>一般来说，只要半天就可以完成对这个模板的设定哦</p>
+	    			<p>如果您在使用中有什么问题，可以在教程中找到对应的帮助信息哦</p>
+	    		</div>
+	    		</a-lee>
+	    	</div>
+	    </div>
+	    <template id="lee">
+	    	<div>
+	    		<div style="text-align: center;">
+	    			<div>
+	    			    <slot name="titles"></slot>
+	    			</div>
+	    			<div style="padding:40px 0;">
+	    				<span style="display: inline-block;height: 1px;background:#ccc;width: 150px;margin-right: 15px;"></span>
+	    				<div style="display: inline-block;position: relative;top:4px;">
+	    					<slot name="iocs"></slot>
+	    				</div>
+	    				<span style="display: inline-block;height: 1px;background:#ccc;width: 150px;margin-left:15px;"></span>
+	    			</div>
+	    			<div>
+	    				<slot name="text"></slot>
+	    			</div>
+	    		</div>
+	    		<div style="min-height: 200px;overflow: hidden;">
+	    			<slot name="content">
+	    				
+	    			</slot>
+	    		</div>
+	    	</div>
+	    </template>
+	</body>
+	<script src="vue.js"></script>
+	<script>
+		Vue.component('aLee',{
+			template:'#lee',
+			data(){
+				return{
+					a:0
+				}
+			},
+		})
+		new Vue({
+			el:'#box',
+			data:{
+				a:12
+			},
+			components:{
+				no1:{
+					template:"<p>hello</p>"
+				}
+			}
+		})
+	</script>
+</html>
