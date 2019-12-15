@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		 crossorigin="anonymous">
+		<script src="https://www.jq22.com/jquery/jquery-3.3.1.js"></script>
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		 crossorigin="anonymous"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+
+			.clearfix::after {
+				content: '';
+				display: block;
+				width: 0;
+				height: 0;
+				visibility: hidden;
+				clear: both;
+			}
+
+			.clearfix {
+				zoom: 1;
+			}
+
+			.list {
+				width: 570px;
+				margin: 0 auto;
+				height: 29px;
+			}
+
+			.list li {
+				width: 114px;
+				float: left;
+				font-size: 15px;
+				text-align: center;
+				line-height: 29px;
+			}
+
+			.list li a {
+				color: #494949;
+				text-decoration: none;
+			}
+
+			.jh {
+				width: 100%;
+				transition: 2.5s;
+			}
+
+			.jh:hover {
+				transform: scale(1.04);
+				transition: 2.5s;
+			}
+
+			.jc {
+				width: 100%;
+				transition: 2.5s;
+			}
+
+			.jc:hover {
+				transform: scale(1.04);
+				transition: 2.5s;
+			}
+
+			.rh {
+				width: 100%;
+				transition: 2.5s;
+			}
+
+			.rh:hover {
+				transform: scale(1.04);
+				transition: 2.5s;
+			}
+
+			.ys {
+				width: 100%;
+				transition: 2.5s;
+			}
+
+			.ys:hover {
+				transform: scale(1.04);
+				transition: 2.5s;
+			}
+
+			.zm {
+				width: 100%;
+				transition: 2.5s;
+			}
+
+			.zm:hover {
+				transform: scale(1.04);
+				transition: 2.5s;
+			}
+			[v-cloak]{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" v-cloak="">
+			<no>
+				<img slot="img" style="width: 200px;height: 50px;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvOTI5MTM3MTRiOGVkYTc2NTJmYmYyOTEwMzU0Njk2MjQuanBn.jpg"
+				 alt="">
+				<ul slot="list" class="list">
+					<li><a href="">首页</a></li>
+					<li><a href="">品牌文化</a></li>
+					<li><a href="">珠宝首饰</a></li>
+					<li><a href="">品牌动态</a></li>
+					<li><a href="">联系我们</a></li>
+				</ul>
+				<div slot="jh" class="jh">
+					<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvNzI1MzgwMzI5ZDY0NzM5ZmFhMmQwMzZkM2Y1N2I3ZjMucG5n.png"
+					 alt="">
+					<p style="position: absolute;top: 10px;right: 40px;font-size: 20px;">几何系列</p>
+					<p style="position: absolute;top: 35px;right: 40px;font-size: 14px;">Geometric series</p>
+				</div>
+				<div slot="jc" class="jc">
+					<img style="width: 100%;height: 320px;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvZTFkNDVjODFlODEwNGYzOTljZGIyZjc2NmUyMDBhMWIucG5n.png"
+					 alt="">
+					<p style="position: absolute;top: 10px;left: 30px;font-size: 20px;">戒指</p>
+					<p style="position: absolute;top: 35px;left: 30px;font-size: 14px;">Rings</p>
+				</div>
+				<div slot="rh" class="rh">
+					<img style="width: 100%;height: 320px;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvYmE4N2Q3ODkxMzkwY2NjOTk5MTNhNDczM2FjYTc5MDkuanBn.jpg"
+					 alt="">
+					<p style="position: absolute;top: 10px;left: 30px;font-size: 20px;">耳环/耳钉</p>
+					<p style="position: absolute;top: 35px;left: 30px;font-size: 14px;">Earings</p>
+				</div>
+				<div slot="ys" class="ys">
+					<img style="width: 100%;height: 320px;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvNTEwZjU1YzM1NTBhNzdmMGIyNmVmMGYxOTliMjU3OTIuanBn.jpg"
+					 alt="">
+					<p style="position: absolute;top: 10px;left: 20px;font-size: 20px;">一生一世</p>
+					<p style="position: absolute;top: 35px;left: 20px;font-size: 14px;"> Lifetime</p>
+				</div>
+				<div slot="zm" class="zm">
+					<img style="width: 100%;height: 320px;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvYzkyNzZiZjNhYWVmOTk3YmZhN2ZmZjU2YWE5MDU1YjYuanBn.jpg"
+					 alt="">
+					<p style="position: absolute;top: 10px;left: 20px;font-size: 20px;">字母系列</p>
+					<p style="position: absolute;top: 35px;left: 20px;font-size: 14px;">Subtitle series</p>
+				</div>
+				<div slot="twenty">
+					<p style="font-size: 80px;color: #dedede;">2 0 2 0</p>
+					<p style="position: absolute;top: 41px;right: 0;font-size: 30px;">春季新品</p>
+				</div>
+				<div slot="wonderful">
+					<p style="font-size: 14px;color: #A4A3A3;line-height: 26px;">
+						奇妙地调配婚纱礼衣与珠宝饰品，能让新娘在婚礼上愈加出彩。那么一起来看看婚纱礼衣与珠宝饰品的调配技巧吧。<br>
+						婚纱礼衣与珍珠饰品的调配技巧，首先要断定配饰与礼衣的主副之分，若是新娘配戴款式简略的珍珠饰品，则可以挑选款式花俏的婚纱礼衣；若是新娘挑选的饰品款式较为奢华，婚纱礼衣的款式则以素雅为宜。</p>
+				</div>
+				<div slot="picture">
+					<div>
+						<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvM2UwOGI2Njc2MDVhNzA4YmM2MDA4YWUxMmViNmQ5MGQtMzAweDQwMC5qcGc_p_p100_p_3D.jpg" alt="">
+						<p style="text-align: center;font-size: 14px;color: #333333;padding: 15px 0 8px;">一生一世 – 耳钉</p>
+					</div>
+				</div>
+				<div slot="picture1">
+					<div>
+						<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvNWIyN2UxMGQzOWE5ZDVhMzNmOWViOTY4NGU4ZTJkOWItMzAweDQwMC5qcGc_p_p100_p_3D.jpg" alt="">
+						<p style="text-align: center;font-size: 14px;color: #333333;padding: 15px 0 8px;">一生一世 – 珍珠吊坠</p>
+					</div>
+				</div>
+				<div slot="picture2">
+					<div>
+						<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvZjcyOGMxMzJlNDQyOGFiZTc5YWU4YjMyZGM4NGI2NGQtMzAweDQwMC5qcGc_p_p100_p_3D.jpg" alt="">
+						<p style="text-align: center;font-size: 14px;color: #333333;padding: 15px 0 8px;">一生一世 – 戒指</p>
+					</div>
+				</div>
+				<div slot="picture3">
+					<div>
+						<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvM2I3NDkwZmFhZDdiNGM3N2E4MTc1YmFkNWJkMDE3NmQtMzAweDQwMC5qcGc_p_p100_p_3D.jpg" alt="">
+					<p style="text-align: center;font-size: 14px;color: #333333;padding: 15px 0 8px;">一生一世 – 珍珠耳钉</p>
+					</div>
+				</div>
+				<div slot="vip">
+					<h3 style="text-align: center;font-size: 30px;color: #000000;">VIP高级定制</h3>
+					<p style="text-align: center;font-size: 14px;color: #666666;padding-top: 13px;">我们的设计师将与您携手打造定制属于您自己的举世无双</p>
+					<p style="text-align: center;font-size: 14px;color: #666666;">彰显个性,承载记忆,代代相传！</p>
+					<div style="width: 749px;padding-top: 50px; margin:  0 auto;">
+						<input style="width: 509px;height: 57px;" type="text" placeholder="邮箱地址"><button style="width: 150px;border: none;outline: none; height: 57px;background: #000000;color: #fff;" type="button">提交发送</button>
+					</div>
+				</div>
+				<div slot="photograph">
+					<img style="width: 189px;height: 203px;float: left;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvZDUxMmYxODMyMDMwMTQ1MThmZGJlMGZhNjljYjIzNDYtMzAweDMyNS5qcGc_p_p100_p_3D.jpg" alt="">
+					<img style="width: 189px;height: 203px;float: left;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvYzkwMWY2OGJlNTVlOGZlNjAxYjEyMWE1YWRjZDA4ZjUtMzAweDMyNS5qcGc_p_p100_p_3D.jpg" alt="">
+					<img style="width: 190px;height: 203px;float: left;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvODlhMTVhOTk1N2JhYWVhNGJjMzE0ZGE1NjczZWQwNTUtMzAweDMyNS5qcGc_p_p100_p_3D.jpg" alt="">
+					<img style="width: 190px;height: 203px;float: left;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvNjhmZTgwNmJhNDIxNTYxNGQ3M2Q3ZTNkNTNlMjg2NWQtMzAweDMyNS5qcGc_p_p100_p_3D.jpg" alt="">
+					<img style="width: 190px;height: 203px;float: left;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvNmZiZWRkMDI3NzgxZTI5NWY2NmI2Nzk0ZjRiYjhmNzctMzAweDMyNS5qcGc_p_p100_p_3D.jpg" alt="">
+					<img style="width: 190px;height: 203px;float: left;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvMDEyZmMyMzgzZTFkYTY2ZWM3NjEyNmE1MTkzY2Q3ZjgtMzAweDMyNS5qcGc_p_p100_p_3D.jpg" alt="">
+					<img style="width: 190px;height: 203px;float: left;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvOTNmMjViNWM4MWZiZDdhNzVhYzU2MDEzN2Q0MWU5Y2MtMzAweDMyNS5qcGc_p_p100_p_3D.jpg" alt="">
+					<img style="width: 190px;height: 203px;float: left;" src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvNGQzMDBkZmU0OGQ1YzczOWQ2YTAxNDRkODFhOWRlYTMtMzAweDMyNS5qcGc_p_p100_p_3D.jpg" alt="">
+				</div>
+				<div slot="bottom">
+					<div style="width: 429px;float: left;text-align: center; line-height: 85px;">版权所有 2013-2018 模板网站  沪ICP备0000000000-号</div>
+					<div style="width: 429px;float: left;text-align: center;line-height: 85px; ">
+						<img src="https://ccdn.goodq.top/caches/bd1cf84aefb8c117a6cc8b69507f83e3/aHR0cHM6Ly81ZDY4ZDIzOWU1YmNjLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDgvZTUyMmYwOGUwZWYzYzE4ZDJmZjZhMTEwNDgwNThmODUuanBn.jpg" alt="">
+					</div>
+					<div style="width: 429px;float: left;text-align: center;line-height: 85px; ">法律申明    |    服务条款    |    隐私政策</div>
+				</div>
+			</no>
+		</div>
+		<template id="no">
+			<div>
+				<div style="width: 1439px;height: 119px;padding: 30px 0;margin: 0 auto;text-align: center;">
+					<slot name="img"></slot>
+				</div>
+				<div style="width: 1439px;height: 29px;margin: 0 auto;">
+					<slot name="list"></slot>
+				</div>
+				<div class="clearfix" style="width: 1400px;padding: 0 40px;margin: 0 auto;padding-top: 50px;">
+					<div style="width: 650px;height: 650px;float: left;position: relative;">
+						<slot name="jh"></slot>
+					</div>
+					<div style="width: 650px; float: left;">
+						<div style="width: 315px;height: 320px;margin-left: 10px; float: left;position: relative;">
+							<slot name="jc"></slot>
+						</div>
+						<div style="width: 315px;height: 320px;float: right;position: relative;">
+							<slot name="rh"></slot>
+						</div>
+						<div style="width: 315px;height: 320px;margin-top: 10px; float: left;float: left; margin-left: 10px;position: relative;">
+							<slot name="ys"></slot>
+						</div>
+						<div style="width: 315px;height: 320px;margin-top: 10px;float: right;float: left; margin-left: 10px;position: relative;">
+							<slot name="zm"></slot>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix" style="width: 1400px;padding: 0 40px;margin: 0 auto;padding-top: 50px;">
+					<div style="width: 320px;position: relative;float: left;">
+						<slot name="twenty"></slot>
+					</div>
+					<div style="width: 940px;float: right;">
+						<slot name="wonderful"></slot>
+					</div>
+				</div>
+				<div class="clearfix" style="width: 1400px;padding: 0 40px;margin: 0 auto;padding-top: 50px;">
+					<div style="width: 300px;height: 400px;background: #000000;float: left;">
+						<slot name="picture"></slot>
+					</div>
+					<div style="width: 300px;margin-left:30px; height: 400px;background: #000000;float: left;">
+						<slot name="picture1"></slot>
+					</div>
+					<div style="width: 300px;margin-left:30px; height: 400px;background: #000000;float: left;">
+						<slot name="picture2"></slot>
+					</div>
+					<div style="width: 300px;margin-left:30px; height: 400px;background: #000000;float: left;">
+						<slot name="picture3"></slot>
+					</div>
+					<div style="width: 300px;height: 400px;background: #000000;float: left;margin-top:80px;">
+						<slot name="picture"></slot>
+					</div>
+					<div style="width: 300px;margin-left:30px; height: 400px;background: #000000;float: left;margin-top:80px;">
+						<slot name="picture1"></slot>
+					</div>
+					<div style="width: 300px;margin-left:30px; height: 400px;background: #000000;float: left;margin-top:80px;">
+						<slot name="picture2"></slot>
+					</div>
+					<div style="width: 300px;margin-left:30px; height: 400px;background: #000000;float: left;margin-top:80px;">
+						<slot name="picture3"></slot>
+					</div>
+				</div>
+				<div style="width: 100%;text-align: centear; padding-top: 80px;float: left;">
+					<slot name="vip"></slot>
+				</div>
+				<div style="width: 100%;float: left; padding-top: 100px;">
+					<slot name="photograph"></slot>
+				</div>
+				<div style="width: 1300px; height: 85px;float: left; margin-left: 107px;">
+					<slot name="bottom"></slot>
+				</div>
+			</div>
+		</template>
+	</body>
+	<script src="vue.js"></script>
+	<script>
+		Vue.component('no', {
+			template: "#no",
+		})
+		new Vue({
+			el: "#box",
+		})
+	</script>
+</html>
