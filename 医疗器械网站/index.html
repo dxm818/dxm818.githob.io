@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.css">
+		 <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=ZVxQBFByXwIR6q06AXIHvxOeIRKMkO1F"></script>
+	</head>
+	<body>
+		<div id="box" v-cloak>
+			<div style="min-height: 88px;padding:0 40px;">
+				<daohang></daohang>
+			</div>
+			<div style="min-height: 500px;">
+				<router-view></router-view>
+			</div>
+			<div style="min-height: 80px;width: 100%;float: left;">
+				<bottom></bottom>
+			</div>
+		</div>
+		<template id="no1">
+			<div>
+				<lunbo></lunbo>
+				<conter></conter>
+			</div>
+		</template>
+		<template id="no2">
+			<div>
+				<no2></no2>
+			</div>
+		</template>
+		<template id="no3">
+			<div>
+				<no3></no3>
+			</div>
+		</template>
+		<template id="no4">
+			<div>
+				<no4></no4>
+			</div>
+		</template>
+		<template id="no5">
+			<div>
+				<no5></no5>
+			</div>
+		</template>
+	</body>
+	<script src="vue.js"></script>
+	<script src="vue-router.js"></script>
+	<script src="daohang.js"></script>
+	<script src="lunbo.js"></script>
+	<script src="bottom.js"></script>
+	<script src="no2.js"></script>
+	<script src="no3.js"></script>
+	<script src="no4.js"></script>
+	<script src="no5.js"></script>
+	<script src="conter.js"></script>
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
+	<script src="index.js"></script>
+</html>
